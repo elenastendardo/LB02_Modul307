@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <title>The Beauty of Nature - Photography</title>
+
+  </head>
+
+  <body>
+
+    <header class="centered-layout">
+      <h1><b>The Beauty of Nature - Photography</b></h1>
+    </header>
+
+    <nav class="centered-layout">
+      <ul>
+        <li><a href="index.html">The Experience</a></li>
+        <li><a href="pictures.html">The Pictures</a></li>
+        <li><a href="prices.html">The Prices</a></li>
+        <li class="active"><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main class="centered-layout">
+
+      <h2><b>Tell us what you need, and we will get back to you!</b></h2>
+        <form name="myForm" onsubmit="return validateForm()">
+          <p><b>Reach out to us :)</b></p>
+          <div class="form-group">
+            <label for="inputFirstName">First Name</label>
+            <input type="text" class="form-control" id="inputFirstName" placeholder="ex. Andrew">
+            <small class="error-feedback">Error message</small>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="inputLastName">Last Name</label>
+            <input type="text" class="form-control" id="inputLastName" placeholder="ex. Abolinsh">
+            <small class="error-feedback">Error message</small>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="inputBirthdate">Date of Birth</label>
+            <input type="date" class="form-control" id="inputBirthdate" placeholder="dd/mm/yyyy">
+            <small class="error-feedback">Error message</small>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="inputEmail">Email address</label>
+            <input type="text" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="example@gmail.com">
+            <small class="error-feedback">Error message</small>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="inputRequest">Your request:</label>
+            <textarea id="inputRequest" class="form-control" ></textarea>
+            <small class="error-feedback">Error message</small>
+          </div>
+          <br>
+          <div class="form-group">
+          <input class="" type="checkbox" value="" id="inputCheckbox">
+           <label class="form-check-label" for="inputCheckbox" id="checkboxText">
+            I agree to share my personal data with the staff.
+           </label>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary" onclick="validateReset()">Submit</button>
+        </form>
+
+  </main>
+
+  <script src="script/script.js"></script>
+
+  <footer class="centered-layout">
+    <p class="footer">Elena Stendardo Modul 286/288/307</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

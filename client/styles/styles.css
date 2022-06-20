@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+html, body {
+  font-size: 16px;
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+  overflow: auto;
+  font-family: Raleway, sans-serif;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.centered-layout {
+  padding: 0 calc((100% - 80rem) / 2);
+}
+
+.centered-layout > * {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+header {
+  height: 24rem;
+  overflow: auto;
+  background: url('../links/header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 75%;
+  flex-shrink: 0;
+}
+
+header h1 {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0 0 7px 7px;
+}
+
+nav {
+  background-color: #EEE;
+}
+
+nav ul {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1.6rem 0;
+}
+
+nav ul li a {
+  padding: 1.6rem;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+nav ul li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #DDD;
+}
+
+main {
+  margin: 2rem 0;
+  flex-grow: 1;
+}
+
+.footer {
+  text-align: center;
+}
+
+#carousel {
+    width: 500px;
+    height: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+   }
+
+.carousel-item {
+    color: #000000;
+  }
+
+.gallery {
+  width: 1050px;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.rechner input {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.operation {
+    margin-left: 70px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.operation input[type='image'] {
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+      width: 50px;
+      height: 50px;
+}
+
+input:invalid {
+      border-color: red;
+}
+
+input:valid {
+      border-color: light-grey;
+}
+
+.active {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.error-feedback {
+    visibility: hidden;
+    margin-bottom: -18px;
+    display: block;
+}
+
+.error-feedback.visible {
+    visibility: visible;
+    color: #ff0000;
+}

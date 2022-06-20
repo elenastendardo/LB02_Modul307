@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>The Beauty of Nature - Photography</title>
+
+  </head>
+
+  <body>
+    <audio id="myAudio">
+  <source src="links/cash_sound.mp3" type="audio/mpeg">
+  </audio>
+
+
+    <header class="centered-layout">
+      <h1><b>The Beauty of Nature - Photography</b></h1>
+    </header>
+
+    <nav class="centered-layout">
+      <ul>
+        <li><a href="index.html">The Experience</a></li>
+        <li><a href="pictures.html">The Pictures</a></li>
+        <li class="active"><a href="#">The Prices</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <main class="centered-layout">
+        <h2><b>Prices:</b></h2>
+        <p>Here are the prices for the pictures! For more infos, contact me using the form!<br><br>
+
+          <b>Unedited pictures: 1 CHF<br>
+          Unedited pictures set (of 6): 5 CHF<br>
+          Edited pictures: 3 CHF<br>
+          Edited pictures set (of 6): 15 CHF</b>
+      </p>
+      <div class="rechner">
+        <h3><b>Currency CHF</b></h3>
+        <p>
+          <!-- Here the program gets the value of CHF from the input box -->
+          <input type="text" id="localAmount" size="15" value="15.0">
+          <select id="localExchange">
+            <option value="chf">CHF</option>
+          </select>
+        </p>
+        <div class="operation">
+        <input type="image" alt="Convert from foreign to local"
+               src="links/arrow_up.svg" onclick="foreignToLocal();">
+        <input type="image" alt="Convert from local to foreign"
+               src="links/arrow_down.svg" onclick="localToForeign();">
+        </div>
+        <h3><b>Currency EUR/USD</b></h3>
+        <p>
+          <!-- And here the program changes the value of the input of the value of euros -->
+          <input type="text" id="foreignAmount" size="15" value="">
+          <select id="foreignExchange">
+            <option value="eur">EUR</option>
+            <option value="usd">USD</option>
+          </select>
+        </p>
+      </div>
+    </main>
+
+
+
+
+    <script src="script/script.js"></script>
+
+    <footer class="centered-layout">
+        <p class="footer">Elena Stendardo Modul 286/288/307</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+
+</html>
